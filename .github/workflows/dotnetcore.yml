@@ -11,7 +11,7 @@ jobs:
 
     runs-on: ubuntu-latest
     env:
-      working-dir: ./scr
+      working-dir: ./src
 
     steps:
     - uses: actions/checkout@v2
