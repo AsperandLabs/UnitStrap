@@ -1,0 +1,4 @@
+**/bin/**
+.vscode/**
+**/obj/**
+src/Asperand.IrcBallistic.Worker/appsettings.private.json
