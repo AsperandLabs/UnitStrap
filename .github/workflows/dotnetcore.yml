@@ -1,0 +1,35 @@
+name: .NET Core
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    env:
+      working-dir: ./src/AsperandLabs.UnitStrap.Core
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 3.1.101
+    - name: Install dependencies
+      run: dotnet restore
+      working-directory: ${{env.working-dir}}
+    - name: Build
+      run: dotnet build --configuration Release --no-restore
+      working-directory: ${{env.working-dir}}
+    - name: Pack
+      run: dotnet pack --configuration release
+      working-directory: ${{env.working-dir}}
+    - name: Push package to github
+      run: dotnet nuget push "bin/Release/AsperandLabs.UnitStrap.Core.1.0.0.nupkg" --source "github"
+      
+    #- name: Test
+    #  run: dotnet test --no-restore --verbosity normal
