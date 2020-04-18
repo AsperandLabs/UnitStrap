@@ -2,6 +2,12 @@
 
     <PropertyGroup>
         <TargetFramework>netcoreapp3.1</TargetFramework>
+        <PackageId>OctocatApp</PackageId>
+        <Version>0.0.1</Version>
+        <Authors>UnitStrap-team</Authors>
+        <Company>AsperandLabs</Company>
+        <PackageDescription>DI testing library</PackageDescription>
+        <RepositoryUrl>https://github.com/asperandlabs/unitstrap</RepositoryUrl>
     </PropertyGroup>
 
     <ItemGroup>
