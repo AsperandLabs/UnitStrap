@@ -11,7 +11,7 @@ jobs:
 
     runs-on: ubuntu-latest
     env:
-      working-dir: ./src/AsperandLabs/UnitStrap.Core
+      working-dir: ./src/AsperandLabs.UnitStrap.Core
 
     steps:
     - uses: actions/checkout@v2
