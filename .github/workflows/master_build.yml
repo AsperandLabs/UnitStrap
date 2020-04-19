@@ -31,8 +31,7 @@ jobs:
     - name: Setup nuget config
       run: sed 's/GITHUB_TOKEN/${{ secrets.GITHUB_TOKEN }}/g' templates/.nuget.config > nuget.config
     - name: Publish nuget
-      run: dotnet nuget push bin/Release/UnitStrap.Core.0.0.1.nupkg -s "github"
-      working-directory: ${{env.working-dir}}
+      run: dotnet nuget push src/AsperandLabs.UnitStrap.Core/bin/Release/UnitStrap.Core.0.0.1.nupkg -s "github"
       
     #- name: Test
     #  run: dotnet test --no-restore --verbosity normal
