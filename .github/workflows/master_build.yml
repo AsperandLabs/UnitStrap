@@ -32,6 +32,7 @@ jobs:
       run: sed 's/GITHUB_TOKEN/${{ secrets.GITHUB_TOKEN }}/g' templates/.nuget.config > nuget.config
     - name: Publish nuget
       run: dotnet nuget push src/bin/Release/*.nupkg -s "github"
+      working-directory: ${{env.working-dir}}
       
     #- name: Test
     #  run: dotnet test --no-restore --verbosity normal
