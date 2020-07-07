@@ -4,4 +4,8 @@
         <TargetFramework>netcoreapp3.1</TargetFramework>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\AsperandLabs.UnitStrap.Core\AsperandLabs.UnitStrap.Core.csproj" />
+    </ItemGroup>
+
 </Project>
