@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsperandLabs.UnitStrap.Core
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsperandLabs.UnitStrap.Extensions", "AsperandLabs.UnitStrap.Extensions\AsperandLabs.UnitStrap.Extensions.csproj", "{372C3E8C-5A0A-4890-A4E1-4EDD0D2F7136}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsperandLabs.UnitStrap.Test", "AsperandLabs.UnitStrap.Test\AsperandLabs.UnitStrap.Test.csproj", "{64FA62F9-B495-4D97-989E-07B3D0073296}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{372C3E8C-5A0A-4890-A4E1-4EDD0D2F7136}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{372C3E8C-5A0A-4890-A4E1-4EDD0D2F7136}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{372C3E8C-5A0A-4890-A4E1-4EDD0D2F7136}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64FA62F9-B495-4D97-989E-07B3D0073296}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64FA62F9-B495-4D97-989E-07B3D0073296}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64FA62F9-B495-4D97-989E-07B3D0073296}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64FA62F9-B495-4D97-989E-07B3D0073296}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

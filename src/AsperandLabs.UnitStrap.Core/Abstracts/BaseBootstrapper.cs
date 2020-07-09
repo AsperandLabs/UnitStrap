@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -11,7 +10,7 @@ namespace AsperandLabs.UnitStrap.Core.Abstracts
 
         internal IEnumerable<DependencyAnalyzer> RequestedUnits => (_units ?? (_units = RegisterUnits(new UnitContainer()))).Units;
 
-        public BaseBootstrapper(IServiceCollection services)
+        protected BaseBootstrapper(IServiceCollection services)
         {
             _services = services;
         }
