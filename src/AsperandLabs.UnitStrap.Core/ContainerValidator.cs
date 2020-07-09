@@ -19,7 +19,7 @@ namespace AsperandLabs.UnitStrap.Core
             IServiceCollection services,
             IServiceProvider provider)
         {
-            _dependencyManagers = dependencyManagers.Where(x => x.IsConfigured);
+            //_dependencyManagers = dependencyManagers.Where(x => x.IsConfigured);
             _services = services;
             _serviceProvider = provider;
         }
@@ -51,7 +51,7 @@ namespace AsperandLabs.UnitStrap.Core
             foreach (var unit in _dependencyManagers)
             {
                 var unitType = unit.GetType();
-                var analysis = unit.GetAnalysis(_serviceProvider);
+                var analysis = new RegistrationAnalysis();//unit.GetAnalysis(_serviceProvider);
 
                 foreach (var dependency in analysis.OutOfScopeUnregisteredTypes)
                 {

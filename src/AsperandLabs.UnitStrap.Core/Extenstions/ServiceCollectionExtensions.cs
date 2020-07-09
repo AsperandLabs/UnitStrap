@@ -16,19 +16,6 @@ namespace AsperandLabs.UnitStrap.Core.Extenstions
             return services;
         }
 
-        public static IServiceCollection AddUnit<T>(this IServiceCollection services, bool registerAnalyzer = false)
-            where T : BaseUnitStrapper, new()
-        {
-            return new T().RegisterDependencies(services, registerAnalyzer);
-        }
-
-
-        public static IServiceCollection AddUnit<T, TT>(this IServiceCollection services, TT configuration, bool registerAnalyzer = false)
-            where T : BaseUnitStrapper<TT>, new()
-        {
-            return new T().RegisterDependencies(services, configuration, registerAnalyzer);
-        }
-
         internal static IEnumerable<Type> MapImplementationTypes(this IServiceCollection services, IEnumerable<Type> types)
         {
             return types.Select(t =>

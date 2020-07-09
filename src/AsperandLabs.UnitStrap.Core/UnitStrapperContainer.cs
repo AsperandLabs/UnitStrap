@@ -6,7 +6,7 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace AsperandLabs.UnitStrap.Core
 {
-    internal class UnitStrapperContainer : List<ServiceDescriptor>, IServiceCollection
+    public class UnitStrapperContainer : List<ServiceDescriptor>, IServiceCollection
     {
         private readonly string _baseNamespace;
 
