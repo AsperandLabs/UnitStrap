@@ -1,1 +1,3 @@
-# UnitStrap
+# ![UnitStrap Logo](/documents/unitStrapLogo.png) Unit Strap
+
+UnitStrap is a DI framework build on top of Microsoft dependency injection library. Its goal is to promote organization and cleanliness of dependencies by doing runtime anaysis of the dependency structure. The UnitStrap framework operates on the basis that dependencies can often be grouped to create features. These features must share a base namespace that is defined by the namespace ef the UnitStrapper where they are being registered. This leaves the bootstrapper to group features (units), register configuration and other external dependencies like DB contexts.
