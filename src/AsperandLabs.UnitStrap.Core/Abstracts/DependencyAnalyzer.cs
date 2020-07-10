@@ -7,8 +7,6 @@ namespace AsperandLabs.UnitStrap.Core.Abstracts
     public abstract class DependencyAnalyzer
     {
         private Func<IServiceCollection, IServiceCollection> _registerExpression;
-        public abstract string Namespace { get; }
-
         internal void SetupRegisterCallback(Func<IServiceCollection, IServiceCollection> registerExpression)
         {
             if (_registerExpression != null)

@@ -8,14 +8,6 @@ namespace AsperandLabs.UnitStrap.Core.Extenstions
 {
     public static class ServiceCollectionExtensions
     {
-        public static IServiceCollection AddUnitStrapper(this IServiceCollection services)
-        {
-            services.AddSingleton(services);
-            services.AddTransient<ContainerValidator>();
-            
-            return services;
-        }
-
         internal static IEnumerable<Type> MapImplementationTypes(this IServiceCollection services, IEnumerable<Type> types)
         {
             return types.Select(t =>

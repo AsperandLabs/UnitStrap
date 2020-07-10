@@ -6,10 +6,6 @@ namespace AsperandLabs.UnitStrap.Test
 {
     public class TestBootstrapper: BaseBootstrapper
     {
-        public TestBootstrapper(IServiceCollection services) : base(services)
-        {
-        }
-
         public override IServiceCollection RegisterDependencies(IServiceCollection services)
         {
             //Root dependencies go here!

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AsperandLabs.UnitStrap.Core.Validation;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace AsperandLabs.UnitStrap.Test
 {
@@ -6,7 +7,9 @@ namespace AsperandLabs.UnitStrap.Test
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var builder = new BootstrapperBuilder<TestBootstrapper>();
+            var serviceProvider = builder.BuildServiceProvider();
+            serviceProvider.GetService<EntryPoint>().Run();
         }
     }
 }
