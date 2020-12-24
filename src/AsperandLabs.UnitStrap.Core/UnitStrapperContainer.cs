@@ -1,11 +1,14 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using AsperandLabs.UnitStrap.Core.Extenstions;
 using Microsoft.Extensions.DependencyInjection;
 
+[assembly: InternalsVisibleToAttribute("Tests")]
 namespace AsperandLabs.UnitStrap.Core
 {
+
     internal class UnitStrapperContainer : List<ServiceDescriptor>, IServiceCollection
     {
         private readonly string _baseNamespace;
