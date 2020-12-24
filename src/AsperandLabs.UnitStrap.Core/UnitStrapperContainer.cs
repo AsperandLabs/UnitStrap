@@ -5,7 +5,8 @@ using System.Runtime.CompilerServices;
 using AsperandLabs.UnitStrap.Core.Extenstions;
 using Microsoft.Extensions.DependencyInjection;
 
-[assembly: InternalsVisibleToAttribute("Tests")]
+[assembly: InternalsVisibleTo("DependencyReviewer")]
+[assembly: InternalsVisibleTo("Tests")]
 namespace AsperandLabs.UnitStrap.Core
 {
 
